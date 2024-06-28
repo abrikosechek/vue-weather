@@ -4,17 +4,22 @@
       <img class="header__logo--icon" src="@/assets/media/Weathery.png" />
       <p class="header__logo--text">Weathery</p>
     </div>
+
+    <a class="header__link" href="https://github.com/abrikosechek/vue-weather">
+      <IconGithubWhite />
+    </a>
   </header>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { IconGithubWhite } from "@/assets/icons";
 </script>
 
 <style scoped lang="scss">
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 12px 20px;
 
@@ -29,6 +34,16 @@ export default {};
     }
     &--text {
       font-weight: 600;
+    }
+  }
+
+  &__link {
+    height: 28px;
+    width: 28px;
+
+    & > * {
+      height: 100%;
+      width: 100%;
     }
   }
 }
