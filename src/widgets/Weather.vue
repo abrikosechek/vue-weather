@@ -182,7 +182,7 @@ defineProps(["weather"]);
   align-items: center;
   gap: 24px;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 
   &__item {
     display: flex;
